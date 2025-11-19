@@ -1,0 +1,30 @@
+{
+  "name": "expense-tracker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "frontend": "cd frontend && npm start",
+    "backend": "cd backend && npm start",
+    "dev": "concurrently \"npm run frontend\" \"npm run backend\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Shresthikashyap/Expense-Tracker-React-.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Shresthikashyap/Expense-Tracker-React-/issues"
+  },
+  "homepage": "https://github.com/Shresthikashyap/Expense-Tracker-React-#readme",
+  "dependencies": {
+
+    "bootstrap": "^5.3.2",
+    "concurrently": "^8.2.2",
+    "react-bootstrap": "^2.10.0",
+    "react-router-dom": "^6.22.0",
+    "react-scripts": "^5.0.1"
+  }
+}

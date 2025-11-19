@@ -1,0 +1,59 @@
+.premium{
+    font-size: larger;
+    display: flex;
+    justify-content: center;
+}
+
+/* Premium Prompt */
+.premiumPrompt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 60vh;
+  padding: 30px;
+}
+
+.premiumContent {
+  text-align: center;
+  max-width: 500px;
+  padding: 40px;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.premiumContent h2 {
+  margin: 0 0 15px 0;
+  color: #333;
+  font-size: 28px;
+}
+
+.premiumContent p {
+  color: #666;
+  font-size: 16px;
+  margin-bottom: 25px;
+  line-height: 1.6;
+}
+
+.premiumButton {
+  font-weight: 400;
+  background-color: #475c72;
+  padding: 10px 20px;
+  color: white;
+  font-size: 15px;
+  text-align: center; 
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.premiumButton:hover {
+  background-color: #ff8c00;
+}
+
+@media ( max-width: 640px ) {
+  .premium{
+    font-size:medium;
+  }
+}

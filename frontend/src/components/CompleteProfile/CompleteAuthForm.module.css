@@ -1,0 +1,71 @@
+/* .auth {
+    margin: 0px auto;
+    padding: 10px;
+  } */
+  
+.auth .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 2%;
+  padding-right: 2%;
+  background-color: #000000d3;
+  margin: 0;
+  color: white;
+  height: 12vh;  
+}
+  
+  .auth form {
+    max-width: 42vh;
+    margin: 12vh auto;
+    padding: 30px;
+    background-color: rgba(255, 249, 249, 0.58);
+    border: 2px solid #000000;
+    border-radius: 8px;
+  }
+
+  .auth label {
+    display: block;
+    margin-bottom: 8px;
+  }
+  
+  .auth input[type="file"],
+  .auth input[type="text"] {
+    width: 95%;
+    padding: 8px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  .auth .profileImage {
+    width: 150px;
+    height: 150px;
+    border: 1px solid black;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #ccc;
+    margin-bottom: 16px; 
+    margin-left: 87px;
+  }
+  
+  .auth .control {
+    margin-bottom: 16px;
+  }
+  
+  .auth .action {
+    text-align: center;
+  }
+  
+  .auth .actions {
+    text-align: center;
+    margin-top: 16px;
+  }
+  
+  .auth .toggle {
+    background-color: #686767;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+  }

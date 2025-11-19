@@ -1,0 +1,66 @@
+.container {
+  width: 24vw;
+  margin: 24vh 72vh;
+  padding: 53px;
+  color: #ffffff;
+  border: 1px solid #0a2d5b;
+  border-radius: 5px;
+  background-color: #0a1928; 
+}
+
+.container h1{
+  margin: 0 0 20px;
+  text-align: center;
+  font-weight: 700;
+  font-size:190%;
+  padding-bottom: 9%;
+}
+
+.control {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="email"],
+input[type="password"] {
+  width: 95%;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.action {
+  text-align: center;
+}
+
+.signUpButton {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.signUpButton:hover {
+  background-color: #0056b3;
+}
+
+.actions {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.toggle {
+  color: #007bff;
+  cursor: pointer;
+}
+
+.toggle:hover {
+  text-decoration: underline;
+}

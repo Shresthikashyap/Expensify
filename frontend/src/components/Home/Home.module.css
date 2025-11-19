@@ -1,0 +1,75 @@
+/* Home.module.css */
+
+.home {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  padding-bottom: 153px;
+}
+
+.home h1 {
+  font-weight: 700;
+  font-size: 80px;
+  margin-top: 40px;
+  margin-bottom: 1px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.home p {
+  padding-top: 3%;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.home button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.home button:hover {
+  background-color: #0056b3;
+}
+
+.switch {
+  position: relative;
+  width: 60px;
+  height: 34px;
+}
+
+.slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #000000;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #737576;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}

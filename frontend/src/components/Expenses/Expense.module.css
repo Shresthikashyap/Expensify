@@ -1,0 +1,155 @@
+.form_box {
+  /* margin: 20px; */
+  /* padding-top: 15px; */
+  /* padding-left: 350px;
+  padding-right: 120px; */
+  
+}
+
+.form_box .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 2%;
+  padding-right: 2%;
+  background-color: #000000d3;
+  margin: 0;
+  color: white;
+  height: 12vh;  
+}
+
+.form_box .header_buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.form_box .heading {
+  font-weight: 700;
+  font-size: 30px;
+  color: white;
+}
+
+.form_box .button {
+  font-weight: 400;
+  background-color: #475c72;
+  padding: 10px 20px;
+  color: white;
+  font-size: 15px;
+  text-align: center; 
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.form_box .premium_btn {
+  /* font-weight: 700;
+  background-color: #475c72;
+  padding: 10px 20px;
+  color: white;
+  font-size: 20px;
+  text-align: center; 
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; */
+}
+
+.form_box .button:hover {
+  background-color: #0056b3;
+}
+
+/* Modal Styles */
+.modal_overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.modal_content {
+  background-color: white;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 600px;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+  margin-left: 14rem;
+}
+
+/* @keyframes slideIn {
+  from {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+} */
+
+.modal_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+  border-bottom: 2px solid #e0e0e0;
+  background-color: #f8f9fa;
+  border-radius: 10px 10px 0 0;
+}
+
+.modal_header h2 {
+  margin: 0;
+  font-size: 24px;
+  color: #333;
+}
+
+.close_btn {
+  background: none;
+  border: none;
+  font-size: 32px;
+  color: #666;
+  cursor: pointer;
+  padding: 0;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.3s ease;
+}
+
+.close_btn:hover {
+  color: #ff0000;
+}
+
+@media (max-width: 1024px) and (min-width: 769px) {
+  .modal_content {
+    width: 90%;
+    max-width: 400px;
+    }
+}
+
+@media (max-width: 768px) {
+  .modal_content {
+    width: 90%;
+    max-width: 400px;
+    margin-left: 5rem;
+    }
+}

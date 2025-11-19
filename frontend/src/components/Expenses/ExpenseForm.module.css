@@ -1,0 +1,128 @@
+.formbox {
+  background-color: #ffffff;
+  padding: clamp(1.25rem, 3vw, 2rem);
+  border-radius: 0.5rem;
+  box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.1);
+  max-width: 75rem;
+  margin: 0 auto;
+}
+
+.formGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+}
+
+.formGroup:last-child {
+  grid-column: 1 / -1; /* start at column line 1 and end at the last column line */
+}
+
+.formbox label {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #333;
+  font-size: clamp(0.875rem, 2vw, 1rem);
+}
+
+.formbox input[type="number"],
+.formbox textarea,
+.formbox select {
+  width: 100%;
+  padding: 0.75rem;
+  border: 0.0625rem solid #cccccc;
+  border-radius: 0.375rem;
+  box-sizing: border-box;
+  font-size: clamp(0.875rem, 2vw, 1rem);
+  transition: all 0.2s ease;
+  background-color: #fff;
+}
+
+.formbox input[type="number"]:focus,
+.formbox textarea:focus,
+.formbox select:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 0.1875rem rgba(0, 123, 255, 0.15);
+}
+
+.formbox select {
+  cursor: pointer;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23333' d='M6 9L1 4h10z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.75rem center;
+  padding-right: 2.5rem;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+.formbox button[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 0.375rem;
+  padding: 0.875rem 2rem;
+  cursor: pointer;
+  font-size: clamp(0.875rem, 2vw, 1rem);
+  font-weight: 600;
+  min-width: min(100%, 12rem);
+  transition: all 0.3s ease;
+}
+
+.formbox button[type="submit"]:hover {
+  background-color: #0056b3;
+  transform: translateY(-0.125rem);
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 123, 255, 0.3);
+}
+
+.formbox button[type="submit"]:active {
+  transform: translateY(0);
+}
+
+.formbox .toggle {
+  background-color: #686767;
+}
+
+.formbox .toggle:hover {
+  background-color: #000000;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) and (min-width: 769px) {
+  .formGrid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .buttonContainer {
+    margin-top: 1rem;
+  }
+
+  .formbox button[type="submit"] {
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .formGrid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .buttonContainer {
+    margin-top: 1rem;
+  }
+
+  .formbox button[type="submit"] {
+    width: 100%;
+  }
+}
