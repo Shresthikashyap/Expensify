@@ -19,13 +19,6 @@ const resetPasswordRoutes =  require('./routes/resetpassword');
 const downloadRoutes = require('./routes/expense');
 const allDownloadedFiles = require('./routes/allDownloads');
 
-if (process.env.NODE_ENV === "production") {
-    app.use(express.static(path.join(__dirname, "../frontend/build")));
-    
-    app.get("*", (req, res) => {
-        res.sendFile(path.resolve(__dirname, "../frontend", "build", "index.html"));
-    });
-}
 const app = express();
 const upload = multer();
 require('dotenv').config({ path: './.env' });
@@ -56,6 +49,14 @@ app.use('/premium',premiumUser);
 app.use('/password',resetPasswordRoutes);
 app.use('/download',downloadRoutes);
 app.use('/downloadedFiles',allDownloadedFiles);
+
+if (process.env.NODE_ENV === "production") {
+    app.use(express.static(path.join(__dirname, "../frontend/build")));
+    
+    app.get("*", (req, res) => {
+        res.sendFile(path.resolve(__dirname, "../frontend", "build", "index.html"));
+    });
+}
 
 //app.use('/*', errorController.get404);
 
