@@ -19,7 +19,7 @@ const Leaderboard = () => {
         const getLeaderBoard = async () => {
             try {
                 const response = await axios.get(
-                    `http://localhost:3001/premium/leadership?page=${page}&pageSize=${limit}`,
+                    `https://expensify-j424.onrender.com/premium/leadership?page=${page}&pageSize=${limit}`,
                     {
                         headers: {
                             'Authorization': token,

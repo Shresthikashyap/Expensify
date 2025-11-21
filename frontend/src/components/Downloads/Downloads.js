@@ -14,7 +14,7 @@ const Downloads = () => {
     useEffect(() => {
         const getDownloads = async () => {
             try {
-                const response = await axios.get(`http://localhost:3001/downloadedFiles/all`, {
+                const response = await axios.get(`https://expensify-j424.onrender.com/downloadedFiles/all`, {
                     headers: {
                         'Authorization': token,
                         'Content-Type': 'application/json'

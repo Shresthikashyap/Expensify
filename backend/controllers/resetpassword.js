@@ -59,7 +59,7 @@ const forgotpassword = async (req, res) => {
                     <p>We received a request to reset the password for your account.</p>
                     <p>Click the button below to reset your password:</p>
                     <p style="margin: 30px 0;">
-                        <a href="http://localhost:3001/password/resetpassword/${forgotpasswordid}" 
+                        <a href="https://expensify-j424.onrender.com/password/resetpassword/${forgotpasswordid}" 
                            style="background-color: #4CAF50; color: white; padding: 12px 24px; 
                                   text-decoration: none; border-radius: 4px; display: inline-block;">
                             Reset Password
@@ -67,7 +67,7 @@ const forgotpassword = async (req, res) => {
                     </p>
                     <p>Or copy and paste this link into your browser:</p>
                     <p style="word-break: break-all; color: #666;">
-                        http://localhost:3001/password/resetpassword/${forgotpasswordid}
+                        https://expensify-j424.onrender.com/password/resetpassword/${forgotpasswordid}
                     </p>
                     <p style="color: #666; margin-top: 30px;">
                         If you did not request this password reset, please ignore this email 

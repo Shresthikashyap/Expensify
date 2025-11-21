@@ -35,7 +35,7 @@ const Premium = () => {
     const handleDownload = async () => {
         try {
             
-            const response = await axios.get('http://localhost:3001/user/download', { 
+            const response = await axios.get('https://expensify-j424.onrender.com/user/download', { 
                 headers: {
                     'Authorization': token,
                     'Content-Type': 'application/json'
@@ -66,7 +66,7 @@ const Premium = () => {
     const handleActivatePremium = async() => {
         try {
             console.log('here')
-            const response = await axios.get('http://localhost:3001/purchase/premium-membership',{ 
+            const response = await axios.get('https://expensify-j424.onrender.com/purchase/premium-membership',{ 
                 headers: {
                     'Authorization': token,
                     'Content-Type': 'application/json'
@@ -80,7 +80,7 @@ const Premium = () => {
             "order_id" :response.data.order.id,
             "handler" : async function(response){
                 
-            const res =  await axios.post('http://localhost:3001/purchase/update-transactionstatus',{
+            const res =  await axios.post('https://expensify-j424.onrender.com/purchase/update-transactionstatus',{
                     order_id : options.order_id,
                     payment_id : response.razorpay_payment_id,
                 },{ 

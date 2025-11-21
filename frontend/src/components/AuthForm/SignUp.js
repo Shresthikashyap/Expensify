@@ -31,7 +31,7 @@ const SignUp = () => {
                     password : enteredPassword
                 }
 
-                let response = await axios.post("http://localhost:3001/users/signup",userObj);
+                let response = await axios.post("https://expensify-j424.onrender.com/users/signup",userObj);
                 console.log(response.data.token)
                 if(response.data.token){
                     alert('You successfully signed in')

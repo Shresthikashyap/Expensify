@@ -10,7 +10,7 @@ const VerifyEmailButton = () => {
 
     const handleVerifyEmail = async () => {
         try {
-            const response = await axios.post('http://localhost:3001/users/verifyemail',{},{ 
+            const response = await axios.post('https://expensify-j424.onrender.com/users/verifyemail',{},{ 
                 headers: { 
                     'Authorization': token,
                     'Content-Type': 'application/json' 

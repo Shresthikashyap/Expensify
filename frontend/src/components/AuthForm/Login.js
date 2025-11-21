@@ -35,7 +35,7 @@ const Login = () => {
         setError(null);
 
         if(enteredEmail !== null && enteredPassword !== null){
-            const response = await axios.post("http://localhost:3001/users/login", {
+            const response = await axios.post("https://expensify-j424.onrender.com/users/login", {
                 email: enteredEmail,
                 password: enteredPassword
             }); 

@@ -29,7 +29,7 @@ const Expense = () => {
     const fetchExpenses = async () => {
       try {
         console.log('*******************',token)
-        const response = await axios.get('http://localhost:3001/expense/get-expenses', {                 
+        const response = await axios.get('https://expensify-j424.onrender.com/expense/get-expenses', {                 
           headers: {
           'Authorization': token,
           'Content-Type': 'application/json'
@@ -47,7 +47,7 @@ const Expense = () => {
 
   const deleteExpenseHandler = async id => {
     try {
-      const response = await axios.delete(`http://localhost:3001/expense/delete-expense/${id.toString()}`, { 
+      const response = await axios.delete(`https://expensify-j424.onrender.com/expense/delete-expense/${id.toString()}`, { 
         headers: { 
           'Authorization': token,
           'Content-Type': 'application/json' } });
@@ -61,7 +61,7 @@ const Expense = () => {
  const deleteAllExpenseHandler = async (ids) => {
     try {
       const response = await axios.post(
-        'http://localhost:3001/expense/delete-expenses-bulk',
+        'https://expensify-j424.onrender.com/expense/delete-expenses-bulk',
         { expenseIds: Array.from(ids) },
         {
           headers: {
@@ -107,14 +107,14 @@ const Expense = () => {
     try {
       let response = null;
       if (Object.keys(editedExpense).length !== 0) {
-        response = await axios.post(`http://localhost:3001/expense/update-expense/${editedExpense._id}`, expense, { 
+        response = await axios.post(`https://expensify-j424.onrender.com/expense/update-expense/${editedExpense._id}`, expense, { 
           headers: { 
             'Authorization': token,
             'Content-Type': 'application/json'
           } });
         dispatch(updateExpense({ id: editedExpense._id, updatedExpense: response.data.expense }));
       } else {
-        response = await axios.post('http://localhost:3001/expense/add-expense', expense, { 
+        response = await axios.post('https://expensify-j424.onrender.com/expense/add-expense', expense, { 
           headers: { 
             'Authorization': token,
             'Content-Type': 'application/json'
