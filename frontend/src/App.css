@@ -12,14 +12,13 @@ header {
   text-shadow: 0 0 5px rgba(217, 222, 234, 0.112);
 }
 
-/* Container holds sidebar + main content */
+/* holds sidebar + main content */
 .container {
   display: flex;
   /* min-height: 100vh; */
   width: 100%;
 }
 
-/* Sidebar */
 .sidebar {
   width: 14.375rem; /* 230px */
   height: 100vh;
@@ -149,7 +148,7 @@ header {
   } */
 }
 
-/* Tablet styles */
+/* Tablet */
 @media (max-width: 1024px) and (min-width: 769px) {
   .sidebar {
     /* width: 12.5rem; 200px */
